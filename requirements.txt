@@ -1,0 +1,5 @@
+ipython
+textblob
+wikipedia
+click
+nltk
