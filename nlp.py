@@ -27,8 +27,8 @@ def get_text_blob(text):
     blob = TextBlob(text)
     return blob
 
-@cli.command('search')
-@click.argument('name', type=str)
+#@cli.command('search')
+#@click.argument('name', type=str)
 def get_phrases(name):
     """ Get phrases from TextBlob """
     print(f"Getting phrases from TextBlob for {name}...")
@@ -36,7 +36,14 @@ def get_phrases(name):
     blob = get_text_blob(text)
     phrases = blob.noun_phrases
     print(f"Phrases: {phrases}")
+
     return phrases  
+
+def search_wiki_pages(page):
+    return wikipedia.search(page)
 
 if __name__ == "__main__":
     cli()
+
+# get all the player names for the given team   
+

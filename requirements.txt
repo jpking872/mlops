@@ -3,3 +3,5 @@ textblob
 wikipedia
 click
 nltk
+fastapi
+uvicorn
