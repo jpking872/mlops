@@ -22,3 +22,6 @@ def get_nouns(name: str):
 def get_pages(page: str):
     pages = search_wiki_pages(page)
     return pages
+
+if __name__ == "__main__":
+    uvicorn.run(app, port=8080, host="0.0.0.0")
